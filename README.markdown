@@ -30,3 +30,8 @@ redsn0w, ipsw, iosgcc all found in **BTSync/programs/ipad** folder
 		$ gcc helloworld.c -o helloworld
 		$ ldid -S helloworld
 		$ ./helloworld
+> rsync -avz --ignore-existing -e ssh /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/usr/lib/ root@192.168.0.21:/usr/lib
+> rsync -avz --ignore-existing -e ssh /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/usr/include/ root@192.168.0.21:/usr/include
+> rsync -avz --ignore-existing -e ssh /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/PrivateFrameworks/ root@192.168.0.21:/System/Library/PrivateFrameworks/
+> rsync -avz --ignore-existing -e ssh /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.0.sdk/System/Library/Frameworks/ root@192.168.0.21:/System/Library/Frameworks/
+> scp /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/usr/include/crt_externs.h root@192.168.0.21:/usr/include/crt_externs.h
